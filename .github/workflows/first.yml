@@ -19,7 +19,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Hello world action step
-        uses: gha-project-move/ # Uses an action in the root directory
+        uses: ./gha-project-move/ # Uses an action in the root directory
         id: hello
         with:
           who-to-greet: 'Mona the Octocat'
