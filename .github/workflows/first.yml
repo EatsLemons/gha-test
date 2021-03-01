@@ -19,10 +19,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Hello world action step
-        uses: EatsLemons/gha-kanban-next@v1
+        uses: EatsLemons/gha-kanban-next@v2
         id: hello
         with:
           who-to-greet: 'Mona the Octocat'
+          OCTOKIT_TOKEN: ${{ secrets.OCTOKIT_TOKEN }}
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
