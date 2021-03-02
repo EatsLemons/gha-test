@@ -19,7 +19,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Hello world action step
-        uses: EatsLemons/gha-kanban-next@v6.9
+        uses: EatsLemons/gha-kanban-next@v6.10
         id: hello
         with:
           who-to-greet: 'Mona the Octocat'
